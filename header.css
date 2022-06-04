@@ -1,18 +1,93 @@
 body{
-    direction: rtl;
-    padding:0;
-    margin:0;
-    
+    direction: rtl;  
+}
+.header{
+    display: flex;
+    padding: 10px 20px;
+
 }
 
+.rpart{
+    display: flex;
+
+}
 .logo{
     width:50px;
 }
-.rpart{
-    display: flex;
-    padding: 10 20px;
-
-}
 .rpart > a{
     margin: 15px;
+    cursor: pointer;
+}
+.lpart{
+    margin-right:700px;
+}
+.lpart >a {
+    border:2px solid #22E9D5 ;
+    padding:10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.lpart > img{
+    padding-right: 20px;
+}
+.spart{
+    display:flex;
+}
+.academy{
+    padding:100px;
+}
+.academy >h1{
+    color: #4B0A94;
+}
+.academy > p{
+    width:300px;
+    font-size: 18px;
+}
+.academy > button{
+    background-color: #7E2BDB;
+    border:none;
+    padding:12px;
+    border-radius: 15px;
+    color: #fff;
+}
+.spart >img{
+padding-right: 200px;
+}
+#container{
+     margin:100px 300px;
+}
+
+.services{
+    display:flex;
+}
+.services >div >img{
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+}
+.services >div{
+    margin: auto;
+}
+.services >div >p{
+    text-align:center;
+    color:#4B0A94;
+}
+.fline{
+    display:flex;
+}
+.cfirst{
+    width:200px;
+    height: 150px;
+    box-shadow: 0px 10px 15px #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+.cfirst >img{
+    margin-top:15px;
+    margin-right: 70px;
+    width: 65px;
+}
+.cfirst > p{
+    text-align: center;
 }
