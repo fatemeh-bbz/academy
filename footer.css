@@ -1,0 +1,30 @@
+footer{
+    background: url(./img/Web\ 1920\ â€“\ 6.png);
+}
+.footer{
+    padding:200px;
+    display:flex;
+    color: #fff;
+}
+.aboutus{
+    padding-left: 50px;
+}
+.aboutus >ul {
+    list-style: none;
+    cursor: pointer;    
+}
+.news{
+ 
+    padding: 15px;
+}
+.news> input{
+    border-radius: 10px;
+    padding:10px 20px;
+    border:none;
+}
+.news >button {
+    border:none;
+    background-color: #B688E9;
+     border-radius: 10px;
+    padding:10px 20px;
+}
