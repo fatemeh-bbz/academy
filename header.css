@@ -150,7 +150,7 @@ padding-right: 200px;
     padding-top:30px
 }
 .formb{
-    width: 50%;
+    width: 80%;
     height: 300px;
     border-radius: 14px;
     display:flex;
@@ -188,3 +188,6 @@ padding-right: 200px;
 .formb >img{
     padding-right: 200px;
 }
+
+
+
