@@ -9,6 +9,50 @@
 </head>
 <body>
 
+    
+<?php
+    $error = array();
+    if(sizeof($_POST)>0)
+        if(isset($_POST['agree'])){
+            $name = $_POST['fname'];
+            $mail = $_POST['email'];
+            $pass = hash('sha256',$_POST['pass']);
+            $gender = $_POST['gender'];
+            $date = $_POST['date'];
+            $db = @mysqli_connect('localhost','root','','registerform');
+            $er = true;
+            if(!$db)   
+                $error[] =  'خطا در اتصال ';
+            else{
+                $sql = "insert into users values('$name','$mail','$pass','$gender','$date')";
+                $db->query($sql);
+                if($db->affected_rows>0){
+                    $error[] = 'اطلاعات با موفقیت وارد شد';
+                    $er = false;
+                }
+                else  
+                
+                    $error[] = 'اطلاعات ذخیره نشده است';
+            }
+        }
+        else
+            $error[] = 'گزینه من ربات نیستم انتخاب نشده است';
+?>
+<?php if(sizeof($error)>0): ?>
+    <?php if($er == true): ?>
+        <div class="register error">
+    <?php else: ?>
+        <div class="register success">
+        <?php endif; ?>
+       <ul>
+       <?php
+            foreach($error as $e)
+                echo  '<li>'.$e.'</li>';
+       ?>
+       </ul>
+       
+</div>
+<?php  endif ?>
 
     <div class="container">
     <div class="back">  </div>  
